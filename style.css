@@ -35,7 +35,7 @@ section{
     padding: 0 80px;
     margin: auto;
 }
-.about, .services, .rooms, .teams, .contact, footer{
+.about, .services, .rooms, .rooms, .contact, footer{
     font-family: 'Poppins', sans-serif;
 }
 .about .about-content,
@@ -258,16 +258,14 @@ section .title::after{
 }
 
 /* services section styling */
-.services, .teams{
+.services,.apartments{
     color:#fff;
     background: #111;
 }
-.services .title::before,
-.teams .title::before{
+.services .title::before,.apartments .title::before{
     background: #fff;
 }
-.services .title::after,
-.teams .title::after{
+.services .title::after,.apartments .title::after{
     background: #111;
     content: "what we provide";
 }
@@ -303,23 +301,23 @@ section .title::after{
     margin: 10px 0 7px 0;
 }
 
-/* rooms section styling */
+/* apartments section styling */
 
-.rooms .title::after{
-    content: "rooms we offer";
+.apartments .title::after{
+    content: "other premises";
 }
-.rooms .rooms-content .column{
+.apartments .apartments-content .column{
     width: calc(50% - 30px);
 }
-.rooms .rooms-content .left .text{
+.apartments .apartments-content .left .text{
     font-size: 20px;
     font-weight: 600;
     margin-bottom: 10px;
 }
-.rooms .rooms-content .left p{
+.apartments .apartments-content .left p{
     text-align: justify;
 }
-.rooms .rooms-content .left a{
+.apartments .apartments-content .left a{
     display: inline-block;
     background: red;
     color: #fff;
@@ -331,30 +329,30 @@ section .title::after{
     border: 2px solid red;
     transition: all 0.3s ease;
 }
-.rooms .rooms-content .left a:hover{
+.apartments .apartments-content .left a:hover{
     color: red;
     background: none;
 }
-.rooms .rooms-content .right .bars{
+.apartments .apartments-content .right .bars{
     margin-bottom: 15px;
 }
-.rooms .rooms-content .right .info{
+.apartments .apartments-content .right .info{
     display: flex;
     margin-bottom: 5px;
     align-items: center;
     justify-content: space-between;
 }
-.rooms .rooms-content .right span{
+.apartments .apartments-content .right span{
     font-weight: 500;
     font-size: 18px;
 }
-.rooms .rooms-content .right .line{
+.apartments .apartments-content .right .line{
     height: 5px;
     width: 100%;
     background: lightgrey;
     position: relative;
 }
-.rooms .rooms-content .right .line::before{
+.apartments .apartments-content .right .line::before{
     content: "";
     position: absolute;
     height: 100%;
@@ -362,27 +360,27 @@ section .title::after{
     top: 0;
     background: red;
 }
-.rooms-content .right .html::before{
+.apartments-content .right .html::before{
     width: 90%;
 }
-.rooms-content .right .css::before{
+.apartments-content .right .css::before{
     width: 60%;
 }
-.rooms-content .right .js::before{
+.apartments-content .right .js::before{
     width: 80%;
 }
-.rooms-content .right .php::before{
+.apartments-content .right .php::before{
     width: 50%;
 }
-.rooms-content .right .mysql::before{
+.apartments-content .right .mysql::before{
     width: 70%;
 }
 
-/* teams section styling */
-.teams .title::after{
-    content: "who with us";
+/* rooms section styling */
+.rooms .title::after{
+    content: "rooms we offer";
 }
-.teams .carousel .card{
+.rooms .carousel .card .box{
     background: #222;
     border-radius: 6px;
     padding: 25px 35px;
@@ -390,33 +388,28 @@ section .title::after{
     overflow: hidden;
     transition: all 0.3s ease;
 }
-.teams .carousel .card:hover{
-    background: red;
-}
-.teams .carousel .card .box{
+.rooms .carousel .card .box{
     display: flex;
     flex-direction: column;
     align-items: center;
     justify-content: center;
     transition: all 0.3s ease;
 }
-.teams .carousel .card:hover .box{
+.rooms .carousel .card:hover .box{
     transform: scale(1.05);
 }
-.teams .carousel .card .text{
+.rooms .carousel .card .text{
     font-size: 25px;
     font-weight: 500;
     margin: 10px 0 7px 0;
 }
-.teams .carousel .card img{
-    height: 150px;
-    width: 150px;
+.rooms .carousel .card img{
     object-fit: cover;
-    border-radius: 50%;
-    border: 5px solid red;
+    height: 250px;
+    border: 3px solid white;
     transition: all 0.3s ease;
 }
-.teams .carousel .card:hover img{
+.rooms .carousel .card:hover img{
     border-color: #fff;
 }
 .owl-dots{
